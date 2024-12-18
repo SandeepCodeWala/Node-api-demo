@@ -1,0 +1,229 @@
+{
+  "item": [
+    {
+      "id": "943c830d-9819-4d13-a1e3-f57ef2289df2",
+      "name": "Get All Users",
+      "request": {
+        "description": {
+          "content": "Get a list of all users",
+          "type": "text/plain"
+        },
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "users"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [
+            {
+              "key": "members",
+              "value": []
+            },
+            {
+              "key": "reference",
+              "value": {}
+            },
+            {
+              "key": "Type",
+              "value": {
+                "_postman_propertyName": "QueryParam",
+                "_postman_propertyIndexKey": "key",
+                "_postman_propertyAllowsMultipleValues": true
+              }
+            },
+            {
+              "key": "_postman_listIndexKey",
+              "value": "key"
+            },
+            {
+              "key": "_postman_listAllowsMultipleValues",
+              "value": true
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "body": {}
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "ac299475-d97a-4dd8-a7cc-7ed58afe0001",
+      "name": "Create Item",
+      "request": {
+        "description": {
+          "content": "Create a new user",
+          "type": "text/plain"
+        },
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "api",
+            "signup"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [
+            {
+              "key": "members",
+              "value": []
+            },
+            {
+              "key": "reference",
+              "value": {}
+            },
+            {
+              "key": "Type",
+              "value": {
+                "_postman_propertyName": "QueryParam",
+                "_postman_propertyIndexKey": "key",
+                "_postman_propertyAllowsMultipleValues": true
+              }
+            },
+            {
+              "key": "_postman_listIndexKey",
+              "value": "key"
+            },
+            {
+              "key": "_postman_listAllowsMultipleValues",
+              "value": true
+            }
+          ],
+          "variable": []
+        },
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"NewItem\",\"value\":\"NewValue\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "64956efd-9261-486b-ac32-e763cee69efa",
+      "name": "Get user by ID",
+      "request": {
+        "description": {
+          "content": "Get an user by ID",
+          "type": "text/plain"
+        },
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "api",
+            "user",
+            ":id"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [
+            {
+              "key": "members",
+              "value": []
+            },
+            {
+              "key": "reference",
+              "value": {}
+            },
+            {
+              "key": "Type",
+              "value": {
+                "_postman_propertyName": "QueryParam",
+                "_postman_propertyIndexKey": "key",
+                "_postman_propertyAllowsMultipleValues": true
+              }
+            },
+            {
+              "key": "_postman_listIndexKey",
+              "value": "key"
+            },
+            {
+              "key": "_postman_listAllowsMultipleValues",
+              "value": true
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "body": {}
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "6b0b807f-6a21-47dc-b842-0d1229f5e362",
+      "name": "Create Item",
+      "request": {
+        "description": {
+          "content": "login a  user",
+          "type": "text/plain"
+        },
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "api",
+            "login"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [
+            {
+              "key": "members",
+              "value": []
+            },
+            {
+              "key": "reference",
+              "value": {}
+            },
+            {
+              "key": "Type",
+              "value": {
+                "_postman_propertyName": "QueryParam",
+                "_postman_propertyIndexKey": "key",
+                "_postman_propertyAllowsMultipleValues": true
+              }
+            },
+            {
+              "key": "_postman_listIndexKey",
+              "value": "key"
+            },
+            {
+              "key": "_postman_listAllowsMultipleValues",
+              "value": true
+            }
+          ],
+          "variable": []
+        },
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"NewItem\",\"value\":\"NewValue\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [],
+  "info": {
+    "_postman_id": "b8d2d2d3-36de-4633-819e-e92c8fdb89d4",
+    "name": "My Express API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "A collection of API endpoints for my Express application",
+      "type": "text/plain"
+    }
+  }
+}
