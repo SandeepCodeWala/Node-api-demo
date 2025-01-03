@@ -14,10 +14,8 @@ app.use(express.json());
 app.use(cors(corsOptions));
 // Connect to MongoDB
 mongoose
-.connect("mongodb+srv://inviasandy:cIL5G2waGjcG8V7X@cluster0.to7d2.mongodb.net/test?retryWrites=true&w=majority", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+.connect("mongodb+srv://inviasandy:cIL5G2waGjcG8V7X@cluster0.to7d2.mongodb.net/test?retryWrites=true&w=majority")
+
   .then(() => {
     console.log("Connected to MongoDB");
   })
