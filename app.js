@@ -13,8 +13,14 @@ const corsOptions = {
 app.use(express.json());
 app.use(cors(corsOptions));
 // Connect to MongoDB
+
+const mongoUri = process.env.MONGODB_URI;
+if (!mongoUri) {
+  console.error("MONGODB_URI environment variable is not set");
+  process.exit(1);
+}
 mongoose
-.connect("mongodb+srv://inviasandy:cIL5G2waGjcG8V7X@cluster0.to7d2.mongodb.net/test?retryWrites=true&w=majority")
+.connect(mongoUri)
 
   .then(() => {
     console.log("Connected to MongoDB");
